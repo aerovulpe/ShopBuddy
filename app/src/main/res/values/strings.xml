@@ -1,6 +1,27 @@
 <resources>
     <string name="app_name">ShopBuddy</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="title_section1">Home</string>
+    <string name="title_section2">Settings</string>
+    <string name="title_section3">About</string>
+
+    <string name="questionLabel">Question</string>
+    <string name="question">How much wood could a wood chuck chuck if a wood chuck could chuck wood?</string>
+    <string name="questionNumber">9</string>
+
+    <string name="progressText">Question # out of #</string>
+    <string name="progressPercent">20</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
     <string name="action_settings">Settings</string>
+    <string name="title_activity_yes_no">YesNo</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_stars">stars</string>
+    <string name="title_activity_slider">slider</string>
+    <string name="title_activity_about">about</string>
 </resources>
