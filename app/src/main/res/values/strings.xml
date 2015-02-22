@@ -24,4 +24,10 @@
     <string name="title_activity_stars">stars</string>
     <string name="title_activity_slider">slider</string>
     <string name="title_activity_about">about</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="prodName">XBox 360</string>
+    <string name="prodDesc">Up for auction is an xbox 360 that powers on fine and can sync controllers.  Only problem I have found is the games wont load.  I put a game in and it says reading but doesn\'t go any further.  The auction includes the console only. This item is being sold as is.</string>
+    <string name="prodLink">http://www.ebay.com/itm/AS-IS-Microsoft-Xbox-360-White-Console-Console-Only-Wont-read-games-/271776847781</string>
 </resources>

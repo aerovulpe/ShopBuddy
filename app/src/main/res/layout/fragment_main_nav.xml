@@ -36,29 +36,15 @@
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Slider Test"
-        android:id="@+id/testSlider"
-        android:layout_below="@+id/imageView"
+        android:text="Begin Quiz!"
+        android:id="@+id/start_quiz"
+        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="57dp" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Star Test"
-        android:id="@+id/testStar"
-        android:layout_below="@+id/testSlider"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Yes/No Test"
-        android:id="@+id/testYesNo"
-        android:layout_below="@+id/testStar"
-        android:layout_centerHorizontal="true" />
+        android:elegantTextHeight="true"
+        android:padding="15dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
 
 </RelativeLayout>
 

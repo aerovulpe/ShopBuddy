@@ -1,0 +1,447 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#DDDDDD"
+                tools:context="com.tdothacks.shopbuddy.fragments.QuizFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/yes_no_layout">
+        <!--android:visibility="gone">-->
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/question_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:autoText="false"
+                    android:password="false"
+                    android:phoneNumber="false"
+                    android:text="@string/questionLabel"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#00A9FF"
+                    android:textSize="40dp"/>
+
+                <TextView
+                    android:id="@+id/questionNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@+id/question_title"
+                    android:layout_toRightOf="@+id/question_title"
+                    android:autoText="false"
+                    android:password="false"
+                    android:phoneNumber="false"
+                    android:text="@string/questionNumber"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#00A9FF"
+                    android:textSize="40dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/qRectangleBg"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/question_title"
+                    android:background="@drawable/rectangle">
+
+                    <TextView
+                        android:id="@+id/question_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="6dp"
+                        android:background="#c7c7c7"
+                        android:text="@string/question"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="22dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/choices"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="200dp">
+
+                    <ImageButton
+                        android:id="@+id/yesButton"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/yes"/>
+
+                    <ImageButton
+                        android:id="@+id/noButton"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/no"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:progress="@string/progressPercent"
+                android:progressTint="#00A9FF"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/question_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/progressBar"
+                android:layout_centerHorizontal="true"
+                android:text="@string/progressText"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/slider_layout"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@id/scrollView"
+            android:layout_marginBottom="40dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/questionLabel"
+                    android:id="@id/question_title"
+                    android:autoText="false"
+                    android:password="false"
+                    android:phoneNumber="false"
+                    android:textColor="#00A9FF"
+                    android:textSize="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/questionNumber"
+                    android:id="@id/questionNumber"
+                    android:autoText="false"
+                    android:password="false"
+                    android:phoneNumber="false"
+                    android:textColor="#00A9FF"
+                    android:textSize="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/question_title"
+                    android:layout_toEndOf="@+id/question_title"
+                    android:layout_marginLeft="10dp"/>
+
+                <RelativeLayout
+                    android:id="@id/qRectangleBg"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/rectangle"
+                    android:layout_below="@id/question_title"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/question"
+                        android:id="@id/textView"
+                        android:background="#c7c7c7"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="6dp"
+                        android:textSize="22dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:id="@id/choices"
+                    android:layout_marginTop="200dp"
+                    android:visibility="visible"
+                    android:transitionGroup="true">
+
+                    <SeekBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/seekBar"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:progress="50"
+                        android:progressTint="#00A9FF"
+                        android:secondaryProgressTint="#00A9FF"
+                        android:thumbTint="#ff007bb8"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Agree"
+                        android:id="@+id/agree"
+                        android:layout_alignTop="@+id/disagree"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Disagree"
+                        android:id="@+id/disagree"
+                        android:layout_below="@+id/seekBar"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"/>
+
+                    <ImageButton
+                        android:id="@+id/nextButton"
+                        android:layout_width="175dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/next"
+
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="75dp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@id/relativeLayout">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@id/progressBar"
+                android:progress="@string/progressPercent"
+                android:progressTint="#00A9FF"
+                android:visibility="visible"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/progressText"
+                android:id="@id/textView2"
+                android:layout_above="@+id/progressBar"
+                android:layout_centerHorizontal="true"/>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/stars_layout"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@id/scrollView"
+            android:layout_marginBottom="40dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/questionLabel"
+                    android:id="@id/question_title"
+                    android:autoText="false"
+                    android:password="false"
+                    android:phoneNumber="false"
+                    android:textColor="#00A9FF"
+                    android:textSize="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/questionNumber"
+                    android:id="@id/questionNumber"
+                    android:autoText="false"
+                    android:password="false"
+                    android:phoneNumber="false"
+                    android:textColor="#00A9FF"
+                    android:textSize="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/question_title"
+                    android:layout_toEndOf="@+id/question_title"
+                    android:layout_marginLeft="10dp"/>
+
+                <RelativeLayout
+                    android:id="@id/qRectangleBg"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/rectangle"
+                    android:layout_below="@+id/question_title"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/question"
+                        android:id="@id/textView"
+                        android:background="#c7c7c7"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="6dp"
+                        android:textSize="22dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:id="@id/choices"
+                    android:layout_marginTop="200dp"
+                    android:visibility="visible"
+                    android:transitionGroup="true">
+
+                    <ImageButton
+                        android:id="@id/nextButton"
+                        android:layout_width="175dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/next"
+
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="75dp"/>
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ratingBar"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentEnd="false"
+                        android:progressBackgroundTint="#00A9FF"
+                        android:numStars="5"
+                        android:nestedScrollingEnabled="true"
+                        android:progressTint="#ffdbda00"
+                        android:secondaryProgressTint="#00A9FF"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@id/progressBar"
+                android:progress="@string/progressPercent"
+                android:progressTint="#00A9FF"
+                android:visibility="visible"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/progressText"
+                android:id="@+id/textView2"
+                android:layout_above="@+id/progressBar"
+                android:layout_centerHorizontal="true"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
