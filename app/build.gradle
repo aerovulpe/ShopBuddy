@@ -5,8 +5,8 @@ android {
     buildToolsVersion "21.1.2"
 
     defaultConfig {
-        applicationId "shopbuddy.tdothackteam.me.shopbuddy"
-        minSdkVersion 16
+        applicationId "com.example.timothy.shopbuddy"
+        minSdkVersion 15
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"
