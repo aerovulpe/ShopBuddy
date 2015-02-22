@@ -1,4 +1,4 @@
-package com.tdothacks.shopbuddy;
+package com.tdothacks.shoppingbuddy;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;

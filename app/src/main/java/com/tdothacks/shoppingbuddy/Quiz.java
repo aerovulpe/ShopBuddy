@@ -1,4 +1,4 @@
-package com.tdothacks.shopbuddy;
+package com.tdothacks.shoppingbuddy;
 
 
 import java.util.ArrayList;

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.tdothacks.shopbuddy">
+          package="com.tdothacks.shoppingbuddy">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashActivity">
+        <activity android:name="com.tdothacks.shoppingbuddy.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -15,12 +15,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.tdothacks.shoppingbuddy.MainActivity"
             android:label="@string/app_name">
         </activity>
 
         <activity
-            android:name=".AboutActivity"
+            android:name="com.tdothacks.shoppingbuddy.AboutActivity"
             android:label="@string/title_activity_about">
         </activity>
     </application>

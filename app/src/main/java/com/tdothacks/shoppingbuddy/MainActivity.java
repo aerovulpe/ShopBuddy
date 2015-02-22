@@ -1,4 +1,4 @@
-package com.tdothacks.shopbuddy;
+package com.tdothacks.shoppingbuddy;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -14,8 +14,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.tdothacks.shopbuddy.fragments.NavigationDrawerFragment;
-import com.tdothacks.shopbuddy.fragments.QuizFragment;
+import com.tdothacks.shoppingbuddy.fragments.NavigationDrawerFragment;
+import com.tdothacks.shoppingbuddy.fragments.QuizFragment;
 
 
 public class MainActivity extends ActionBarActivity

@@ -1,4 +1,4 @@
-package com.tdothacks.shopbuddy.fragments;
+package com.tdothacks.shoppingbuddy.fragments;
 
 
 import android.os.AsyncTask;
@@ -9,7 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.tdothacks.shopbuddy.R;
+import com.tdothacks.shoppingbuddy.R;
 
 import java.io.BufferedReader;
 import java.io.IOException;

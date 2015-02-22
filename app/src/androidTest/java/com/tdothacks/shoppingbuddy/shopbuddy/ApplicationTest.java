@@ -1,4 +1,4 @@
-package com.tdothacks.shopbuddy.shopbuddy;
+package com.tdothacks.shoppingbuddy.shopbuddy;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

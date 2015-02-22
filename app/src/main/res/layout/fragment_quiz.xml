@@ -3,7 +3,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#DDDDDD"
-                tools:context="com.tdothacks.shopbuddy.fragments.QuizFragment">
+                tools:context="com.tdothacks.shoppingbuddy.fragments.QuizFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"

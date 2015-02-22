@@ -1,4 +1,4 @@
-package com.tdothacks.shopbuddy.fragments;
+package com.tdothacks.shoppingbuddy.fragments;
 
 import android.support.v7.app.ActionBarActivity;
 import android.app.Activity;
@@ -22,7 +22,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.tdothacks.shopbuddy.R;
+import com.tdothacks.shoppingbuddy.R;
 
 /**
  * Fragment used for managing interactions for and presentation of a navigation drawer.

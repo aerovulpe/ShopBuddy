@@ -1,4 +1,4 @@
-package com.tdothacks.shopbuddy.fragments;
+package com.tdothacks.shoppingbuddy.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,8 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.tdothacks.shopbuddy.Quiz;
-import com.tdothacks.shopbuddy.R;
+import com.tdothacks.shoppingbuddy.Quiz;
+import com.tdothacks.shoppingbuddy.R;
 
 import java.util.Random;
 
